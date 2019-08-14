@@ -7,9 +7,9 @@ import { FormsModule } from '@angular/forms';
 import { CounterDirective } from './counter.directive';
 
 @NgModule({
-    declarations: [StoreComponent],
+    declarations: [StoreComponent, CounterDirective],
     imports: [ CommonModule, ModelModule, BrowserModule, FormsModule  ],
-    exports: [StoreComponent, CounterDirective],
+    exports: [StoreComponent ],
     providers: [],
 })
 export class StoreModule { }
