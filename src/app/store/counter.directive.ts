@@ -9,7 +9,6 @@ import {Directive, ViewContainerRef,
 export class CounterDirective {
     constructor(private container: ViewContainerRef,
         private template: TemplateRef<Object>) { }
-        
     @Input('counterOf')
     counter: number;
 
