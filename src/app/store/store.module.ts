@@ -8,7 +8,7 @@ import { CounterDirective } from './counter.directive';
 import { CartSummaryComponent } from './cartSummary.component';
 import { CartDetailComponent } from './cartDetail.component';
 import { CheckoutComponent } from './checkout.component';
-import { RouterModule } from '../../../node_modules/@angular/router';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [StoreComponent,
