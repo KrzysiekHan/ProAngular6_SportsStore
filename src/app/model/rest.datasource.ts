@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Product } from './product.model';
 import { Observable } from 'rxjs';
 import { Order } from './order.model';
-
+import { map } from 'rxjs/operators';
 
 const PROTOCOL = 'http';
 const PORT = 3500;
