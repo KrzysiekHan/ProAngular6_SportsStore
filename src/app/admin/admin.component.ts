@@ -1,10 +1,18 @@
 import { Component} from '@angular/core';
+import { AuthService } from '../model/auth.service';
+import { Router } from '../../../node_modules/@angular/router';
 
 @Component({
     templateUrl: 'admin.component.html',
 })
 export class AdminComponent {
-    constructor() { }
+    constructor(private auth: AuthService,
+        private router: Router) { }
+
+    logout() {
+        this.auth.clear();
+        this.router.navigateByUrl('/');
+    }
 
 
 }
